@@ -12,10 +12,9 @@ def getCharVal(n):
 
 
 def uppercase(str):
-    for i in range(len(str)):
-        if (i == (len(str) - 1)):
-            print("{}".format(getCharVal(subtract32(getAsciiVal(str[i])))),
-                  end="\n")
+    for i in range(0, len(str) + 1):
+        if (i == len(str)):
+            print("")
             break
         print("{}".format(getCharVal(subtract32(getAsciiVal(str[i]))))
               if getAsciiVal(str[i]) >= 97
