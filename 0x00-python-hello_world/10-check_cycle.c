@@ -10,7 +10,7 @@ int check_cycle(listint_t *list)
 {
 	listint_t *fastPtr = list, *slowPtr = list;
 
-	while (fastPtr && slowPtr && fastPtr->next == NULL)
+	while (fastPtr && slowPtr && fastPtr->next != NULL)
 	{
 		slowPtr = slowPtr->next;
 		fastPtr = fastPtr->next->next;
