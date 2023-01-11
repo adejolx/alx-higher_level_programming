@@ -5,13 +5,12 @@ def get_length(string):
 
 
 def get_first_char(string):
+    if (not string):
+        return None
     return string[0]
 
 
 def multiple_returns(sentence):
-    if (not sentence):
-        return None
-
     str_length = get_length(sentence)
     first_char = get_first_char(sentence)
 
