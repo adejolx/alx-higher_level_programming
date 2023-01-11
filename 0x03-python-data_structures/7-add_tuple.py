@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def convert_to_list(is_tuple):
     new_list = list(is_tuple)
     return new_list
@@ -11,7 +13,7 @@ def convert_to_tuple(is_list):
 def fill_empty_space(list_x):
     if (not list_x):
         list_x.append(0)
-        list_x.append(0)
+    list_x.append(0)
     return list_x
 
 
