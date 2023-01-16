@@ -9,8 +9,9 @@ def roman_to_int(roman_string):
         return 0
 
     for i in range(str_len):
-        if i + 1 < str_len and nums[roman_string[i]] < nums[roman_string[i + 1]]:
-                val_sum -= nums[roman_string[i]]
+        if (i + 1 < str_len
+                and nums[roman_string[i]] < nums[roman_string[i + 1]]):
+            val_sum -= nums[roman_string[i]]
         else:
             val_sum += nums[roman_string[i]]
     return val_sum
